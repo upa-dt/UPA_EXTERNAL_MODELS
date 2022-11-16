@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UPAExternalAPI.Models.BloodBanks
+namespace UPA_EXTERNAL_MODELS.Models.BloodBanks
 {
     public class InventoryRecord
     {

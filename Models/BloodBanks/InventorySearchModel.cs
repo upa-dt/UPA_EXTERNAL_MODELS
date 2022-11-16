@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
-namespace UPAExternalAPI.Models.BloodBanks
+namespace UPA_EXTERNAL_MODELS.Models.BloodBanks
 {
     public class InventorySearchModel
     {
