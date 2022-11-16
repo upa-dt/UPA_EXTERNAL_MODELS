@@ -21,7 +21,6 @@ namespace UPAExternalAPI.Models.BloodBanks
         /// (Required) Latest Donation Date
         /// </summary>
         [JsonProperty("donationDate", Required = Required.Always)]
-        [Required]
         public DateTime? donationDate { get; set; }
         /// <summary>
         /// (Required) Deferral Starting Date
