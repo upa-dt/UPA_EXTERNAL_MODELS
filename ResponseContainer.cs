@@ -4,6 +4,9 @@ using System.Collections;
 
 public class ResponseContainer<T>
 {
+    /// <summary>
+    /// Value Zero In Error Code means No Error
+    /// </summary>
     [JsonProperty("errorCode")]
     public int ErrorCode { get; set; }
     [JsonProperty("errorMessage")]
