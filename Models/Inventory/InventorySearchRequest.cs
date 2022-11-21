@@ -19,7 +19,7 @@ namespace UPAExternalAPI.Models.Inventory
         /// Product Type (Drug, Device, Lab, Supply)
         /// </summary>
         [JsonProperty("productType")]
-        public ProductTypeEnum productType { get; set; }
+        public ProductTypeEnum? productType { get; set; }
 
         /// <summary>
         /// نوع العهدة
