@@ -40,13 +40,13 @@ namespace UPA_EXTERNAL_MODELS.Models.BloodBanks
         public string FamilyName { get; set; }
 
         [JsonProperty("birthDate", Required = Required.Always)]
-        public DateTimeOffset BirthDate { get; set; }
+        public DateTime BirthDate { get; set; }
 
         [JsonProperty("comment", Required = Required.Always)]
         public string Comment { get; set; }
 
         [JsonProperty("regestrationDate", Required = Required.Always)]
-        public DateTimeOffset RegestrationDate { get; set; }
+        public DateTime RegestrationDate { get; set; }
 
         [JsonProperty("isPermenantDeferral")]
         public int? IsPermenantDeferral { get; set; }
