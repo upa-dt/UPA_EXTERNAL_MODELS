@@ -18,17 +18,19 @@ namespace UPA_EXTERNAL_MODELS.Models.BloodBanks
         [Required]
         public string donerId { get; set; }
         /// <summary>
-        /// (Required) Blood Group (Obtain List Of Values By Calling GetBloodGroup Action)
+        /// (Optional) Blood Group (Obtain List Of Values By Calling GetBloodGroup Action), Can be null if from 
+        /// oral investigation the donor is defered before analysing his blood group to safe money  
+        /// Later if the donor accepted and get his blood analyzed you should call registerDonorBloodInfo to add his blood Group and Rh
         /// </summary>
-        [JsonProperty("bloodGroup", Required = Required.Always)]
-        [Required]
-        public int bloodGroup { get; set; }
+        [JsonProperty("bloodGroup")]
+        public int? bloodGroup { get; set; }
         /// <summary>
-        /// (Required) Blood Group (Obtain List Of Values By Calling GetBloodRh Action)
+        /// (Optional) Blood Group (Obtain List Of Values By Calling GetBloodRh Action)Can be null if from 
+        /// oral investigation the donor is defered before analysing his blood Rh to safe money 
+        /// Later if the donor accepted and get his blood analyzed you should call registerDonorBloodInfo to add his blood Group and Rh
         /// </summary>
-        [JsonProperty("bloodRh", Required = Required.Always)]
-        [Required]
-        public int bloodRh { get; set; }
+        [JsonProperty("bloodRh")]
+        public int? bloodRh { get; set; }
         /// <summary>
         /// (Required) First Name
         /// </summary>
