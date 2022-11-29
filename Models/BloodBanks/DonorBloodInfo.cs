@@ -16,6 +16,15 @@ namespace UPA_EXTERNAL_MODELS.Models.BloodBanks
 
         [JsonProperty("bloodRh", Required = Required.Always)]
         public string BloodRh { get; set; }
+
+        /// <summary>
+        /// List Of All Phenotypes for the Donor
+        /// </summary>
+        [JsonProperty("bloodPhenotype")]
+        public List<int> bloodPhenotype { get; set; }
+
+
+
         [JsonProperty("recordDate", Required = Required.Always)]
         public DateTime RecordDate { get; set; }
     }

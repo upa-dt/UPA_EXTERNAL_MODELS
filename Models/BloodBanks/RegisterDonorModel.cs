@@ -23,14 +23,14 @@ namespace UPA_EXTERNAL_MODELS.Models.BloodBanks
         /// Later if the donor accepted and get his blood analyzed you should call registerDonorBloodInfo to add his blood Group and Rh
         /// </summary>
         [JsonProperty("bloodGroup")]
-        public int? bloodGroup { get; set; }
+        public virtual int? bloodGroup { get; set; }
         /// <summary>
         /// (Optional) Blood Group (Obtain List Of Values By Calling GetBloodRh Action)Can be null if from 
         /// oral investigation the donor is defered before analysing his blood Rh to safe money 
         /// Later if the donor accepted and get his blood analyzed you should call registerDonorBloodInfo to add his blood Group and Rh
         /// </summary>
         [JsonProperty("bloodRh")]
-        public int? bloodRh { get; set; }
+        public virtual int? bloodRh { get; set; }
         /// <summary>
         /// (Required) First Name
         /// </summary>

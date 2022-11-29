@@ -31,5 +31,12 @@ namespace UPA_EXTERNAL_MODELS.Models.BloodBanks
         [Required]
         [JsonRequired]
         public int bloodRh { get; set; }
+
+
+        /// <summary>
+        /// (Optional) Blood Phenotype List  (Obtain List Of Values By Calling GetBloodPhenotypes Action) 
+        /// </summary>
+        [JsonProperty("bloodPhenotype")]
+        public List<int> bloodPhenotype { get; set; }
     }
 }
